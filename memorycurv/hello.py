@@ -1,7 +1,7 @@
 from prettytable import PrettyTable
 import os
 def get_joblist():
-    pwd = '/Users/apple/Desktop/pythonCode/credit/'
+    pwd = '/root/bloodycoder/todo_reminder/memorycurv/credit/'
     welcome_info = PrettyTable(["command id","command name"])
     welcome_info.align["command id"] = 'l'
     welcome_info.align["command name"] = 'l'
