@@ -1,6 +1,6 @@
 import sys
-sys.path.append("/Users/apple/Desktop/github/bloodycoder/todo_reminder/")
-sys.path.append("/Users/apple/Desktop/github/bloodycoder/todo_reminder/memorycurv")
+sys.path.append("/root/bloodycoder/todo_reminder/")
+sys.path.append("/root/bloodycoder/todo_reminder/memorycurv")
 import PicardMail
 import hello
 joblist = hello.get_joblist()
