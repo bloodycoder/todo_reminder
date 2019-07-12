@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta charset = "GB2312">
+<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-2.0.0.min.js"></script>
+<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-ui"></script>
+<link href="http://www.francescomalagrino.com/BootstrapPageGenerator/3/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="row-fluid">
+				<div class="span12">
+					<h4 class="text-center">
+						To do
+					</h4>
+				</div>
+			</div>
+			<div class="hero-unit">
+				<table class="table table-bordered table-hover">
+					<thead>
+						<tr>
+						     <th>
+								Task id
+							</th>
+							<th>
+								Tasks
+							</th>
+							<th>
+								Credit
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% if tasks %}
+							 {% for task in tasks %}
+							 <tr class = "success">
+							    <td>
+									{{task.task_id}}
+								</td>
+								<td>
+									{{task.task_name}}
+								</td>
+							    <td>
+									{{task.task_credit}}
+								</td>
+								<td>
+										<a class="btn btn-primary btn-small" href="/todo/del?q={{task.task_id}}">delete</a>
+								</td>
+							 {% endfor %}
+						{% endif %}
+					</tbody>
+				</table>
+				<p>
+					<a class="btn btn-primary btn-large" href="/todo/add/">Add »</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
