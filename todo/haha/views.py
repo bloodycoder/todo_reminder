@@ -8,7 +8,7 @@ from todo.models import Task
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 import datetime
-pwd = "/Users/apple/Desktop/github/bloodycoder/todo_reminder/memorycurv/credit/data/"
+pwd = "/root/bloodycoder/todo_reminder/memorycurv/credit/data/"
 def hello(request):
     t = get_template('text.html')
     values = request.META.items()
